@@ -6,13 +6,17 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AppComponent } from './app.component';
 import { FancyFormComponent } from './fancy-form/fancy-form.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { GetrequestComponent } from './getrequest/getrequest.component';
+import { HttpClientModule } from  '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FancyFormComponent
+    FancyFormComponent,
+    GetrequestComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     FormsModule,
     AngularFontAwesomeModule,

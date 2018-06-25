@@ -1,3 +1,14 @@
 section {
     background: whitesmoke;
 }
+
+.zoom {
+    padding: 10px;
+    background-color: #BEBEBE;
+    transition: transform .2s; /* Animation */ 
+    margin: 0 auto;   
+}
+.zoom:hover {
+    transform: scale(1.2);
+    padding: 10px 180px;
+}
