@@ -1,6 +1,7 @@
 <div class="container">
 <h1>Fast HTTP Caching</h1>
 
+
   <div *ngFor="let r of repos|async">
     <!-- <p>{{ r | json}}</p> -->
     <h2><span class="ba">Id:</span> {{ r.id }}</h2>
@@ -8,11 +9,22 @@
     <p>{{ r.body }}</p>  
   </div>
 
+
+
   <ul>
-    <li *ngFor="let city of cities$ | async">
+    <li *ngFor="let city of cities$ | async as result">
         Name: {{ city.name }},
         Population: {{ city.population }},
         Elevation: {{ city.elevation }}</li>
   </ul>
+
+  <div *ngIf="temp else loading">
+      <h3>I am NOT ngtemplate</h3>
+    </div>
+  
+
+  <ng-template #loading>
+      <h3>I am ng-template!</h3>
+    </ng-template>
   
 </div>
