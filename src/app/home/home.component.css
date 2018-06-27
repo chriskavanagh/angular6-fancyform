@@ -13,6 +13,7 @@
 
 #contact {
     position: relative;
+    margin-top: -24px;
 }
 
 p {
@@ -23,7 +24,7 @@ p {
 .centered {
     position: absolute;
     bottom: 13%;
-    left: 49%;
+    left: 50%;
     font-size: 1.2vw;
     color: rgb(212, 101, 37);
     transform: translate(-50%, -50%);

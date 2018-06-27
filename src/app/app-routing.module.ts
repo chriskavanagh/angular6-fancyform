@@ -11,7 +11,8 @@ import { AppComponent } from './app.component';
 const routes: Routes = [
   { path: 'get-requests', component: GetrequestComponent },
   { path: 'fancy-form', component: FancyFormComponent },
-  { path: 'home', component: HomeComponent }
+  { path: 'home', component: HomeComponent },
+  {path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 
 
