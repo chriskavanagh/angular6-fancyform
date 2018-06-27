@@ -8,19 +8,23 @@ import { FancyFormComponent } from './fancy-form/fancy-form.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { GetrequestComponent } from './getrequest/getrequest.component';
 import { HttpClientModule } from  '@angular/common/http';
+import { AppRoutingModule } from './/app-routing.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FancyFormComponent,
-    GetrequestComponent
+    GetrequestComponent,
+    HomeComponent
   ],
   imports: [
     HttpClientModule,
     BrowserModule,
     FormsModule,
     AngularFontAwesomeModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

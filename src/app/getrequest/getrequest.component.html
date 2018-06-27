@@ -2,13 +2,12 @@
 <h1>Fast HTTP Caching</h1>
 
 
-  <div *ngFor="let r of repos|async">
+  <div *ngFor="let r of repos$ | async">
     <!-- <p>{{ r | json}}</p> -->
     <h2><span class="ba">Id:</span> {{ r.id }}</h2>
     <h3><span class="ba">Title:</span> {{ r.title }}</h3>
-    <p>{{ r.body }}</p>  
+    <p class="indent">{{ r.body }}</p>  
   </div>
-
 
 
   <ul>

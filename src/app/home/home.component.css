@@ -1,0 +1,31 @@
+.mycss {
+  display: block;
+  max-width: 100%; 
+  height: auto;
+}
+
+/* #contact {
+    background:url('/assets/img/pic1.jpg');
+    display: block;
+    max-width: 100%;
+    height: auto;
+} */
+
+#contact {
+    position: relative;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.centered {
+    position: absolute;
+    bottom: 13%;
+    left: 49%;
+    font-size: 1.2vw;
+    color: rgb(212, 101, 37);
+    transform: translate(-50%, -50%);
+    font-family: 'Dancing Script', cursive;    
+}

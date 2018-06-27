@@ -2,3 +2,10 @@
     font-weight: bold;
     font-style: italic;
 }
+h1 {
+    margin:100px auto;
+}
+.indent {
+    text-indent: 20px;
+    text-transform: capitalize;
+}
