@@ -23,10 +23,14 @@ p {
 
 .centered {
     position: absolute;
-    bottom: 13%;
-    left: 50%;
-    font-size: 1.2vw;
+    bottom: 4%;
+    left: 49%;
+    font-size: 1.3vw;
     color: rgb(212, 101, 37);
     transform: translate(-50%, -50%);
     font-family: 'Dancing Script', cursive;    
+}
+
+a:hover {
+    text-decoration-color: white;
 }

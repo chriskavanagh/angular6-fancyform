@@ -5,13 +5,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-
+import { FireComponent } from './fire/fire.component';
 
 
 const routes: Routes = [
   { path: 'get-requests', component: GetrequestComponent },
   { path: 'fancy-form', component: FancyFormComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'fire', component: FireComponent },
   {path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
 

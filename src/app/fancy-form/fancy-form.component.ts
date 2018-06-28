@@ -24,7 +24,7 @@ export class FancyFormComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     this.renderer.setStyle(this.para.nativeElement, 'font-size', '55px');
     this.renderer.setStyle(this.para.nativeElement, 'color', 'blue');
-    this.renderer.addClass(this.para.nativeElement, 'zoom');
+    // this.renderer.addClass(this.para.nativeElement, 'zoom');
     console.log(this.para.nativeElement.innerHTML);
   }
 
