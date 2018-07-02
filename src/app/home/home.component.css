@@ -5,10 +5,12 @@
 }
 
 /* #contact {
-    background:url('/assets/img/pic1.jpg');
+    background:url('/assets/img/pic1.jpg') no-repeat center center;
     display: block;
     max-width: 100%;
+    min-height: 100%;
     height: auto;
+    background-size: cover;
 } */
 
 #contact {

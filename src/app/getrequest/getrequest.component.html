@@ -1,6 +1,29 @@
 <div class="container">
 <h1>Fast HTTP Caching</h1>
 
+<form #heroForm="ngForm">
+  {{ heroForm.value|json }}
+  {{ post|json }}
+  <div>
+    <h3>Title:</h3>
+    <input type="text" class="form-control rounded-1" [(ngModel)]="post.title" name="title">
+  </div>
+  <div>
+    <h3>Body:</h3>
+    <input type="text" class="form-control rounded-1" [(ngModel)]="post.body" name="body">
+  </div>
+  <div>
+    <h3>UserId:</h3>
+    <input type="text" class="form-control rounded-1" [(ngModel)]="post.userId" name="userId">
+  </div>
+  <div class="btn">
+    <button (click)="newPost()">New Post</button>
+  </div>
+</form>
+<div>
+  {{ req$ | async | json }}
+</div>
+
 
   <div *ngFor="let r of repos$ | async">
     <!-- <p>{{ r | json}}</p> -->
@@ -11,7 +34,7 @@
 
 
   <ul>
-    <li *ngFor="let city of cities$ | async as result">
+    <li *ngFor="let city of cities$ | async">
         Name: {{ city.name }},
         Population: {{ city.population }},
         Elevation: {{ city.elevation }}</li>

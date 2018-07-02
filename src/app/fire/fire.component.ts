@@ -3,7 +3,7 @@ import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument 
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-
+// interface for collection from firestore db.
 interface Users {
   name: string;
   age: number;
@@ -26,11 +26,18 @@ export class FireComponent implements OnInit {
   constructor(private afs: AngularFirestore) { }
 
   ngOnInit() {
-    // this.userscollection = this.afs.collection('users')
-    this.userscollection = this.afs.collection('users', ref => {
-      return ref.orderBy('age')
-    });
+    //console.log(this.ref);
+    this.userscollection = this.afs.collection('users')
+    /* this.userscollection = this.afs.collection('users', ref => {
+      // return ref.orderBy('age')
+      return ref.where('age', '>', 40)
+    }); */
     this.users = this.userscollection.valueChanges();
   }
+  
+  show(firstName:HTMLInputElement, lastName:HTMLInputElement){
+    console.log(firstName.value);
+    console.log(lastName.value);
+}
 
 }

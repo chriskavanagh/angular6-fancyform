@@ -10,8 +10,7 @@ import { Post } from './../post'; // used in post request
   templateUrl: './getrequest.component.html',
   styleUrls: ['./getrequest.component.css']
 })
-export class GetrequestComponent implements OnInit {
-
+export class GetrequestComponent implements OnInit {  
   repos$;
   req$;
   path: string = 'https://jsonplaceholder.typicode.com/posts';
@@ -25,29 +24,39 @@ export class GetrequestComponent implements OnInit {
   ])
   .pipe(delay(5000));
 
-
+  post: Post = {
+        title: undefined,
+        body: undefined,
+        userId: undefined
+  }
   constructor(private http: HttpClient) {}            
   
   ngOnInit() {
       // get request    
-      this.repos$ = this.http.get<Post>(this.path); // async in template, no need to subscribe.
+      this.repos$ = this.http.get<Post>(this.path) // async in template, no need to subscribe.
       // .subscribe(data => this.repos$ = data) or . . .
       // this.repos$.subscribe(data => this.repos$ = data);
       
       // post request
-      const data: Post = {
-        title: "Foo Title",
-        body: "I am body",
-        userId: 1
-      }
+      /* const data: Post = {
+        title: "I am the title",
+        body: "I am the body.",
+        userId: "1"
+      } */
 
-      this.req$ = this.http.post<Post>(this.path, data)
+      /* this.req$ = this.http.post<Post>(this.path, this.post)
       .pipe(map(data => "I am " + data.title), delay(3000))     
       .subscribe(
         data => console.log(data),
          err => console.log("Error Occured!")
-        )
+        ) */
     }
+
+    newPost():void {
+      this.req$ = this.http.post<Post>(this.path, this.post)
+      console.log(this.post)
+       
+    };
 
 }
 

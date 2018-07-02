@@ -1,4 +1,9 @@
 <div *ngFor="let user of users | async">
   <h3>{{ user | json }}</h3>
+</div>
 
+<div>
+  <input type="text" #firstNameInput>
+  <input type="text" #lastNameInput>
+  <button (click)="show(firstNameInput, lastNameInput)">Show</button>
 </div>
