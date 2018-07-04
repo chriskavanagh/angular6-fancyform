@@ -15,7 +15,7 @@
 
 #contact {
     position: relative;
-    margin-top: -24px;
+    margin-top: 0px;
 }
 
 p {
@@ -33,6 +33,15 @@ p {
     font-family: 'Dancing Script', cursive;    
 }
 
+p>a {
+    color: #907163 !important;
+}
+
 a:hover {
     text-decoration-color: white;
 }
+
+#phone {
+    margin-right: 7px;
+}
+

@@ -6,15 +6,15 @@
   {{ post|json }}
   <div>
     <h3>Title:</h3>
-    <input type="text" class="form-control rounded-1" [(ngModel)]="post.title" name="title">
+    <input type="text" class="form-control rounded-1" [(ngModel)]="post.title" name="title" #title="ngModel">
   </div>
   <div>
     <h3>Body:</h3>
-    <input type="text" class="form-control rounded-1" [(ngModel)]="post.body" name="body">
+    <input type="text" class="form-control" [(ngModel)]="post.body" name="body" #body="ngModel">
   </div>
   <div>
     <h3>UserId:</h3>
-    <input type="text" class="form-control rounded-1" [(ngModel)]="post.userId" name="userId">
+    <input type="text" class="form-control" [(ngModel)]="post.userId" name="userId" #userId="ngModel">
   </div>
   <div class="btn">
     <button (click)="newPost()">New Post</button>

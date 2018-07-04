@@ -15,6 +15,7 @@ import { HttpClientModule } from  '@angular/common/http';
 import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { FireComponent } from './fire/fire.component';
+//import { NgAisModule } from 'angular-instantsearch';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FireComponent } from './fire/fire.component';
     NgbModule.forRoot(),
     AppRoutingModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    //NgAisModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
