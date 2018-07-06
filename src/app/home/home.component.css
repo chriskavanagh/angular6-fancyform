@@ -28,7 +28,7 @@ p {
     bottom: 4%;
     left: 49%;
     font-size: 1.3vw;
-    color: rgb(212, 101, 37);
+    color: var(--orange-color);
     transform: translate(-50%, -50%);
     font-family: 'Dancing Script', cursive;    
 }

@@ -4,6 +4,17 @@
 }
 h1 {
     margin:100px auto;
+    color: var(--red-color);
+    font-size: 5rem;
+    /* color:#A92F41; */
+}
+
+h2 {
+    color: var(--red-color);
+}
+
+h3 {
+    color: var(--gray-color);
 }
 .indent {
     text-indent: 20px;
@@ -11,4 +22,10 @@ h1 {
 }
 .btn {
     margin-bottom: 5.2vh;
+}
+
+@media(max-width: 779px) {
+    h1 {
+        font-size: 3.5rem;
+    }
 }
