@@ -5,6 +5,10 @@
    min-height: 100vh;
 } */
 
+h1 {
+    margin: 100px 0px 50px;
+}
+
 section {
     background: whitesmoke;
 }

@@ -1,7 +1,20 @@
+h1 {
+    margin-top: 75px;
+    color: #A92F41;
+}
+
+h3 {
+    color: #A09FA0;
+}
+
 div:first-child {
     margin-top: 100px;
 }
 
 div {
     margin: 30px auto;
+}
+
+#bottom {
+    margin-bottom: 30vh;
 }

@@ -45,3 +45,9 @@ a:hover {
     margin-right: 7px;
 }
 
+@media(max-width: 779px) {
+    #contact {
+        padding-top: 24px;
+    }
+}
+

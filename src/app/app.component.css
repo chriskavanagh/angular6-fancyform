@@ -2,7 +2,7 @@ a.navbar-brand {
     color: #D2BF98;
     font-weight: bolder;
     letter-spacing: 1.1px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     /* font-family: 'Montserrat', sans-serif; */
     font-family: "museo-sans", helvetica, sans-serif;
     /* text-shadow:0px 5px 30px #d2bf98; */
@@ -19,4 +19,15 @@ a.navbar-brand {
 
 i {
     padding-right: 5px;
+}
+
+@media (min-width: 349px) and (max-width: 415px) {
+    a.navbar-brand {
+        font-size: 1.1rem;
+    }
+    .navbar-toggler-icon {
+        width: 1.1em;
+        height: 1.1em;
+    }
+    
 }

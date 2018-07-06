@@ -15,6 +15,8 @@ import { HttpClientModule } from  '@angular/common/http';
 import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { FireComponent } from './fire/fire.component';
+import { AboutComponent } from './about/about.component';
+import { FooterComponent } from './footer/footer.component';
 //import { NgAisModule } from 'angular-instantsearch';
 
 @NgModule({
@@ -23,7 +25,9 @@ import { FireComponent } from './fire/fire.component';
     FancyFormComponent,
     GetrequestComponent,
     HomeComponent,
-    FireComponent
+    FireComponent,
+    AboutComponent,
+    FooterComponent
   ],
   imports: [
     HttpClientModule,

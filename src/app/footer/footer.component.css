@@ -1,0 +1,13 @@
+footer {
+    background-color: rgb(21, 30, 49);
+    margin-top: 15rem;
+}
+
+div.footer-copyright {
+    background-color: #31313C;
+    color: #D2BF98;
+}
+
+#company {
+    color: rgb(235, 232, 232);
+}
