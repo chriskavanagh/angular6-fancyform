@@ -1,6 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~font-awesome/css/font-awesome.css";
 
+:root {
+    --red-color: #A92F41;
+    --gray-color: #A09FA0;
+    --orange-color: rgb(212, 101, 37);
+}
+
 body {
     background-color: #FFFFFF !important;
 }
