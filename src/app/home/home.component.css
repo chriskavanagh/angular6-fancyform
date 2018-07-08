@@ -1,53 +1,130 @@
-.mycss {
-  display: block;
-  max-width: 100%; 
-  height: auto;
+.top-container {
+    display: flex;
+    background-color: black;
+    opacity: 0.8;    
 }
-
-/* #contact {
-    background:url('/assets/img/pic1.jpg') no-repeat center center;
-    display: block;
-    max-width: 100%;
-    min-height: 100%;
-    height: auto;
+.showcase {
+    background:url('/assets/img/pic3.jpeg') no-repeat center center;
     background-size: cover;
-} */
-
-#contact {
-    position: relative;
-    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    min-height: 100vh;
+    color: rgb(165, 99, 6);
+    font-weight: bolder;
 }
-
+h1 {
+    margin-top:10vh;
+    /* font-size: 6rem; */
+    font-size: 10vw;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: rgb(56, 36, 3);
+    font-family: 'Dancing Script', cursive;
+}
 p {
-    margin: 0;
-    padding: 0;
+    color: rgb(56, 19, 1);
+    font-size: 1.5vw;
 }
-
-.centered {
-    position: absolute;
-    bottom: 4%;
-    left: 49%;
-    font-size: 1.3vw;
-    color: var(--orange-color);
-    transform: translate(-50%, -50%);
-    font-family: 'Dancing Script', cursive;    
-}
-
-p>a {
-    color: #907163 !important;
-}
-
-a:hover {
-    text-decoration-color: white;
-}
-
 #phone {
     margin-right: 7px;
 }
 
-@media(max-width: 779px) {
-    #contact {
-        padding-top: 24px;
+@media (max-width: 990px) {
+    h1 {
+        font-size:13vw;
+    }
+    p {
+        font-size:3vw;
     }
 }
+
+
+
+/* .mycss {
+    display: block;
+    max-width: 100%; 
+    height: auto;
+  }
+  
+  #contact {
+      background:url('/assets/img/wall.jpg') no-repeat center center;
+      width: 100%;
+      height: auto;
+      background-size: cover;
+      padding-bottom: 52.5%;
+      margin-top: 41px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  } */
+  
+  /* #contact {
+      position: relative;
+      margin-top: 0px;
+  } */
+  
+  
+  
+  /* div.centered {
+      position: absolute;
+      bottom: -11%;
+      left: 49%;
+      font-size: 1.3vw;
+      color: var(--orange-color);
+      transform: translate(-50%, -50%);
+      font-family: 'Dancing Script', cursive;    
+  } */
+  
+  /* p>a {
+      color: #907163 !important;
+  }
+  
+  a:hover {
+      text-decoration-color: white;
+  }
+  
+  #phone {
+      margin-right: 7px;
+  }
+  
+  @media(max-width: 779px) {
+      #contact {
+          padding-top: 24px;
+      }
+  } */
+
+
+/*
+@media (max-width: 768px) {
+    .btn {
+      font-size:11px;
+      padding:4px 6px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .btn {
+      font-size:12px;
+      padding:6px 12px;
+    }
+  }
+    
+  @media (min-width: 992px) {
+    .btn {
+      font-size:14px;
+      padding:8px 12px;
+    }
+  }
+   
+  @media (min-width: 1200px) {
+    .btn {
+      padding:10px 16px;
+      font-size:18px;
+    }
+  } */
 
