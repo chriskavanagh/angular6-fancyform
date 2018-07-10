@@ -4,7 +4,8 @@
     /* opacity: 0.93;     */
 }
 .showcase {
-    background:url('/assets/img/pic3.jpeg') no-repeat center center;
+    /* background:url('/assets/img/pic3.jpeg') no-repeat center center; */
+    background:url('https://odondovi.sirv.com/Images/chef.jpeg') no-repeat center center;
     background-size: cover;
     filter: brightness(85%);
     display: flex;
