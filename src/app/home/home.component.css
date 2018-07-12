@@ -32,11 +32,7 @@ h1 {
     margin-bottom: 4rem;
     /* font-size: 6rem; */
     font-size: 10vw;
-    /* text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-color: rgb(56, 36, 3); */
     font-family: 'Dancing Script', cursive;
-    /* background-color: rgba(150, 142, 142, 0.952); */
     background-color: white;
     /* filter: saturate(20); */
 }
@@ -71,7 +67,7 @@ button {
     color: white;
     border-radius: 20px;
     font-weight: bold;
-    margin-left: 4vw;
+    margin-left: 3.7vw;
     /* margin-left: 3.8rem; */
   }
   
@@ -84,12 +80,11 @@ button {
         margin-bottom: 2.5rem;
     }
     p:not(.different) {
-        font-size: 4vw;
-        
+        font-size: 4vw;        
     }
     button {
         font-size: 18px !important;
-        width: 32vw;
+        width: 21rem;
       }
 }
 
@@ -99,8 +94,9 @@ button {
     }
     button {
         font-size: 18px !important;
-        width: 58vw;
+        width: 12rem;
         padding:6px 16px;
+        margin-left: 2.8rem;
       }
 }
   
