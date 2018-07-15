@@ -17,6 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { FireComponent } from './fire/fire.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
+import { MenuComponent } from './menu/menu.component';
 //import { NgAisModule } from 'angular-instantsearch';
 
 @NgModule({
@@ -27,7 +28,8 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     FireComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    MenuComponent
   ],
   imports: [
     HttpClientModule,

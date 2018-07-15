@@ -10,16 +10,11 @@
     <button (click)="show(firstNameInput, lastNameInput)">Show</button>
   </div>
 
-  <h1>Fire Component</h1>
-  <div *ngFor="let user of users | async">
-    <h3>{{ user | json }}</h3>
+  <div [hidden]="hidden">
+    <p>First: {{firstNameInput.value}}</p>
+    <p>Last: {{lastNameInput.value}}</p>
   </div>
 
-  <div id="bottom">
-    <input type="text" #firstNameInput>
-    <input type="text" #lastNameInput>
-    <button (click)="show(firstNameInput, lastNameInput)">Show</button>
-  </div>
 </div>
 <!-- <app-fancy-form *ngIf="showComponent"></app-fancy-form> -->
 <app-footer></app-footer>

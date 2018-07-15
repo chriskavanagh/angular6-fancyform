@@ -1,4 +1,5 @@
 import { HomeComponent } from './home/home.component';
+import { MenuComponent } from './menu/menu.component';
 import { FancyFormComponent } from './fancy-form/fancy-form.component';
 import { GetrequestComponent } from './getrequest/getrequest.component';
 import { NgModule } from '@angular/core';
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'fancy-form', component: FancyFormComponent },
   { path: 'home', component: HomeComponent },
   { path: 'fire', component: FireComponent },
+  { path: 'menu', component: MenuComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 

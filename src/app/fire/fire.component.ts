@@ -21,6 +21,7 @@ interface Users {
 })
 export class FireComponent implements OnInit {
   
+  hidden: boolean = true;
   showComponent: boolean = true;
   userscollection: AngularFirestoreCollection<Users>;
   users: Observable<Users[]>;
@@ -42,6 +43,7 @@ export class FireComponent implements OnInit {
   }
   
   show(firstName:HTMLInputElement, lastName:HTMLInputElement){
+    this.hidden = false;
     console.log(firstName.value);
     console.log(lastName.value);
 }
