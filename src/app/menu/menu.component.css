@@ -1,9 +1,10 @@
 #restaurant-menu {
-	padding: 90px 0 60px 0;
+    padding: 0px;
+    margin: 0px;
 }
 
 #restaurant-menu .section-title {
-	background: #444 url(https://odondovi.sirv.com/Images/roll.jpg) center center no-repeat fixed;
+    background: url(https://odondovi.sirv.com/Images/roll.jpg) center center no-repeat fixed;
 	background-size: cover;
     height: 100%;
     min-height: 100%;
@@ -13,30 +14,32 @@
 .section-title .overlay-pic {
     min-height: 100vh;
     /* padding: 320px 0; */
-    margin-top:-26px;
+    /* margin-top:-26px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
 }
 
-.section-title .overlay-pic hr{
+/* .section-title .overlay-pic hr{
     width: 85px;
     border-top: 3px solid #8eb640;
     text-align: center;
     margin: 0 auto 40px;
-}
+} */
 
 #theMenu {
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
-    border: 2px solid #8eb640;
+    border: 6px solid #8eb640;
+    margin-top: 170px;
     margin-bottom: 1px;
     background-color: #F1DCDC;
     border-radius: 15px;
-    padding: 10px 20px;
-    font-size: 12rem;
-    opacity: 0.9;
+    padding: 10px 40px;
+    font-size: 14rem;
+    opacity: 0.8;
 }
 
 h3 {
@@ -44,7 +47,8 @@ h3 {
     opacity: 0.8;
     border-radius: 15px;
     padding: 10px 20px !important;
-    border: 2px solid #8eb640;
+    border: 4px solid #8eb640;
+    margin-bottom: 1.8rem;
 }
 
 #restaurant-menu h3 {

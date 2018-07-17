@@ -59,7 +59,7 @@ p:not(.different) {
 #car {
     margin-right: 7px;
 }
-button {
+#button {
     padding: 15px 21px !important;
     font-size: 18px !important;
     width: 19vw;
@@ -69,6 +69,10 @@ button {
     font-weight: bold;
     margin-left: 3.7vw;
     /* margin-left: 3.8rem; */
+  }
+
+  #button:hover {
+    background-color: gold;
   }
   
 
@@ -88,7 +92,7 @@ button {
     p:not(.different) {
         font-size: 4vw;        
     }
-    button {
+    #button {
         font-size: 18px !important;
         width: 21rem;
       }
@@ -98,7 +102,7 @@ button {
     p:not(.different) {
       font-size: 1.6rem;
     }
-    button {
+    #button {
         font-size: 18px !important;
         width: 12rem;
         padding:6px 16px;

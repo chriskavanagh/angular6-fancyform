@@ -21,13 +21,15 @@ i {
     padding-right: 5px;
 }
 
-@media (min-width: 349px) and (max-width: 415px) {
+@media (min-width: 349px) and (max-width: 467px) {
     a.navbar-brand {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+        margin-left: -40px;
+        letter-spacing: auto;
     }
     .navbar-toggler-icon {
-        width: 1.1em;
-        height: 1.1em;
+        width: 1.1rem;
+        height: 1.1rem;
     }
     
 }
