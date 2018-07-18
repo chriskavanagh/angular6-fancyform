@@ -35,11 +35,16 @@
     border: 6px solid #8eb640;
     margin-top: 170px;
     margin-bottom: 1px;
-    background-color: #F1DCDC;
+    background-color: rgba(241, 220, 220, 0.767);
     border-radius: 15px;
     padding: 10px 40px;
     font-size: 14rem;
-    opacity: 0.8;
+    /* color: rgb(20, 8, 0); */
+    /* opacity: 0.8; */
+}
+
+#theMenu::after {
+    opacity: 0.9;
 }
 
 h3 {
@@ -100,15 +105,22 @@ i {
     font-size: 6rem;
 }
 
-@media(max-width: 667px) {
+@media(max-width: 772px) {
+    #theMenu {
+        font-size: 10rem;
+    }
+}
+
+@media(max-width: 499px) {
     * {
         overflow-x: hidden;
     }
     #theMenu {
-        font-size: 7rem;
+        font-size: 6rem;
     }
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        padding: 10px 10px !important;
     }
     i {
         font-size: 4rem;

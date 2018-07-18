@@ -70,11 +70,10 @@ p:not(.different) {
     margin-left: 3.7vw;
     /* margin-left: 3.8rem; */
   }
-
   #button:hover {
     background-color: gold;
-  }
-  
+    color: black;
+  }  
 
   /* -------------- Media Queries -------------- */
   @media (max-width: 361px) {
@@ -109,93 +108,3 @@ p:not(.different) {
         margin-left: 2.8rem;
       }      
 }
-
-
-
-
-
-
-/* .mycss {
-    display: block;
-    max-width: 100%; 
-    height: auto;
-  }
-  
-  #contact {
-      background:url('/assets/img/wall.jpg') no-repeat center center;
-      width: 100%;
-      height: auto;
-      background-size: cover;
-      padding-bottom: 52.5%;
-      margin-top: 41px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-  } */
-  
-  /* #contact {
-      position: relative;
-      margin-top: 0px;
-  } */
-  
-  
-  
-  /* div.centered {
-      position: absolute;
-      bottom: -11%;
-      left: 49%;
-      font-size: 1.3vw;
-      color: var(--orange-color);
-      transform: translate(-50%, -50%);
-      font-family: 'Dancing Script', cursive;    
-  } */
-  
-  /* p>a {
-      color: #907163 !important;
-  }
-  
-  a:hover {
-      text-decoration-color: white;
-  }
-  
-  #phone {
-      margin-right: 7px;
-  }
-  
-  @media(max-width: 779px) {
-      #contact {
-          padding-top: 24px;
-      }
-  } */
-
-
-/*
-@media (max-width: 768px) {
-    .btn {
-      font-size:11px;
-      padding:4px 6px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .btn {
-      font-size:12px;
-      padding:6px 12px;
-    }
-  }
-    
-  @media (min-width: 992px) {
-    .btn {
-      font-size:14px;
-      padding:8px 12px;
-    }
-  }
-   
-  @media (min-width: 1200px) {
-    .btn {
-      padding:10px 16px;
-      font-size:18px;
-    }
-  } */
-
