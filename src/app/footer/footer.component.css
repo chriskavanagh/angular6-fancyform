@@ -1,11 +1,18 @@
 footer {
-    background-color: #131627;
-    margin-top: 15rem;
+    /* background-color: rgb(30, 34, 37); */
+    /* background-color: rgba(36, 41, 44, 0.986); */
+    margin-top: 15rem;    
+    background: transparent radial-gradient(ellipse at top, #17181b 65%, rgb(207, 168, 90) 170%) repeat scroll 0 0;
+    /* background: transparent radial-gradient(ellipse at top, #17181b 60%, #03a9f4 110%) repeat scroll 0 0; */
+    color: white;
+    /* padding: 100px 0; */    
 }
 
 div.footer-copyright {
-    background-color: #04081d;
+    background-color: rgb(30, 34, 37);
     color: #D2BF98;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.2rem;
 }
 
 #company {

@@ -105,6 +105,7 @@ i {
     font-size: 6rem;
 }
 
+/* Media Queries */
 @media(max-width: 772px) {
     #theMenu {
         font-size: 10rem;
@@ -117,6 +118,7 @@ i {
     }
     #theMenu {
         font-size: 6rem;
+        margin-top: 5px;
     }
     h3 {
         font-size: 1.3rem;
@@ -126,3 +128,4 @@ i {
         font-size: 4rem;
     }
 }
+
