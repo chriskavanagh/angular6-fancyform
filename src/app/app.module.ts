@@ -6,6 +6,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { AngularFireModule } from 'angularfire2';
 export const firebaseConfig = environment.firebaseConfig;
 import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireStorageModule } from 'angularfire2/storage';
 
 import { AppComponent } from './app.component';
 import { FancyFormComponent } from './fancy-form/fancy-form.component';
@@ -18,6 +19,7 @@ import { FireComponent } from './fire/fire.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
+import { DropboxDirective } from './dropbox.directive';
 //import { NgAisModule } from 'angular-instantsearch';
 
 @NgModule({
@@ -29,7 +31,8 @@ import { MenuComponent } from './menu/menu.component';
     FireComponent,
     AboutComponent,
     FooterComponent,
-    MenuComponent
+    MenuComponent,
+    DropboxDirective
   ],
   imports: [
     HttpClientModule,
@@ -40,6 +43,7 @@ import { MenuComponent } from './menu/menu.component';
     AppRoutingModule,
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule,
+    AngularFireStorageModule
     //NgAisModule.forRoot()
   ],
   providers: [],
