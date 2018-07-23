@@ -6,6 +6,7 @@ import { Directive, HostListener, Output, EventEmitter } from '@angular/core';
 export class DropboxDirective {
 
   @Output()
+  // valueChange = new EventEmitter();
   valueChange:EventEmitter<number> = new EventEmitter<number>();
 
   counter:number = 0;

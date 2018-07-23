@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 // import { AppComponent } from './app.component';
 import { FireComponent } from './fire/fire.component';
+import { ParentComponent } from './parent/parent.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'fire', component: FireComponent },
   { path: 'menu', component: MenuComponent },
+  { path: 'parent', component: ParentComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 

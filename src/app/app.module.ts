@@ -20,6 +20,8 @@ import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { DropboxDirective } from './dropbox.directive';
+import { StockComponent } from './stock/stock.component';
+import { ParentComponent } from './parent/parent.component';
 //import { NgAisModule } from 'angular-instantsearch';
 
 @NgModule({
@@ -32,7 +34,9 @@ import { DropboxDirective } from './dropbox.directive';
     AboutComponent,
     FooterComponent,
     MenuComponent,
-    DropboxDirective
+    DropboxDirective,
+    StockComponent,
+    ParentComponent
   ],
   imports: [
     HttpClientModule,
