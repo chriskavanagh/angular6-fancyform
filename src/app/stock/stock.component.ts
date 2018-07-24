@@ -10,13 +10,12 @@ export class StockComponent implements OnChanges, OnInit  {
   @Input() stock: number;
   @Input() productId: number;
   @Output() stockValueChange = new EventEmitter();
-  color = '';
   updatedstockvalue: number;
+  color: string = '';
 
   ngOnInit() {
     console.log(this.stock);
-    console.log(this.productId);
-    
+    console.log(this.productId);    
   }
 
       stockValueChanged() {
@@ -26,7 +25,6 @@ export class StockComponent implements OnChanges, OnInit  {
     }
 
     ngOnChanges() {
-
         if (this.stock > 10) {
             this.color = 'green';
         } else {

@@ -13,9 +13,7 @@ export class ParentComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
       this.products = this.getProducts();
-
   }
 
   getProducts() {
@@ -29,17 +27,13 @@ export class ParentComponent implements OnInit {
   }
 
   changeStockValue(p) {
-
+    // p variable comes from $event in template (can be anything).
     this.productToUpdate = this.products.find(this.findProducts, [p.id]);
-
-    this.productToUpdate.stock = this.productToUpdate.stock + p.updatdstockvalue;
-
+    this.productToUpdate.stock = this.productToUpdate.stock + p.updatdstockvalue;    
 }
 
-findProducts(p) {
-
-    return p.id === this[0];
-
-}
+  findProducts(p) {
+      return p.id === this[0];
+  }
 
 }

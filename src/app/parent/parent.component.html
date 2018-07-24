@@ -19,7 +19,10 @@
               <td>{{p.title}}</td>
               <td>{{p.price}}</td>
               <td>{{p.stock}}</td>
-              <td><app-stock [productId]='p.id' [stock]='p.stock' (stockValueChange)='changeStockValue($event)'></app-stock></td>
+              <td>
+                <app-stock [productId]='p.id' [stock]='p.stock' (stockValueChange)='changeStockValue($event)'>                
+                </app-stock>
+              </td>
           </tr>
       </tbody>
   </table>
